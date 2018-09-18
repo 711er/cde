@@ -1,4 +1,3 @@
-
 import numpy as np
 import scipy as sci
 import scipy.special as sp
@@ -52,8 +51,8 @@ square0=Lattice([0.95, 0, 0], [0, 0.95, 0], [0, 0, 1])
 
 square = Lattice(a1=[1, 0, 0], a2=[0, 1, 0], a3=[0, 0, 1])
 
-triangular = Lattice(a1=[0.5, 0.5*np.sqrt(3), 0], 
-                     a2=[0.5, -0.5*np.sqrt(3), 0], 
+triangular = Lattice(a1=[0.5, -0.5*np.sqrt(3), 0], 
+                     a2=[0.5, 0.5*np.sqrt(3), 0], 
                      a3=[0, 0, 1])
 
 def gvec(n1, n2, lat):

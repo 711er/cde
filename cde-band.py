@@ -16,7 +16,8 @@ M = lat.reci_vec(0.5, 0.5, 0)
 
 # Generate a Gamma-X-M-Gamma k-vector list
 nk = 51
-kmesh = np.concatenate([kpath(Gamma, X, nk),                       kpath(X, M, nk),                       kpath(M, Gamma, nk, end_point=True)])
+kmesh = np.concatenate([kpath(Gamma, X, nk), kpath(X, M, nk), \
+	kpath(M, Gamma, nk, end_point=True)])
 k_index = np.arange(len(kmesh))
 # plot_grid(kmesh)
 
@@ -75,7 +76,7 @@ k_labels = ['$\Gamma$', '$X$', '$M$', '$\Gamma$']
 
 plt.figure(figsize=(8,6))
 
-plt.plot(  k_index, w_T, 'o', color='orange', **marker_style, label='T mode'  )
+plt.plot( k_index, w_T, 'o', color='orange', **marker_style, label='T mode' )
 plt.plot( k_index, np.real(w_TI), 'ro', **marker_style, label='TI mode' )
 plt.plot( k_index, np.real(w_LI), 'bo', **marker_style, label='LI mode' )
 plt.xlim((k_index[0], k_index[-1]))
