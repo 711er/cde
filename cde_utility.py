@@ -4,15 +4,28 @@ import scipy.special as sp
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numba as nb
-import timeit
+import time
+
+# mpl.rcParams['mathtext.fontset'] = 'cm'
+# mpl.rcParams['figure.figsize'] = 8, 6
+# mpl.rcParams['axes.titlesize'] = 20
+# mpl.rcParams['axes.labelsize'] = 20
+# mpl.rcParams['lines.linewidth'] = 2
+# mpl.rcParams['lines.markersize'] = 3
+# mpl.rcParams['xtick.labelsize'] = 16
+# mpl.rcParams['ytick.labelsize'] = 16
+# mpl.rcParams['legend.fontsize'] = 16
 
 mpl.rcParams['mathtext.fontset'] = 'cm'
-mpl.rcParams['axes.titlesize'] = 24
-mpl.rcParams['axes.labelsize'] = 24
-mpl.rcParams['lines.linewidth'] = 2
+mpl.rcParams['font.family'] = 'Arial'
+mpl.rcParams['figure.figsize'] = 7.2, 5.4
+mpl.rcParams['axes.titlesize'] = 20
+mpl.rcParams['axes.labelsize'] = 20
+mpl.rcParams['lines.linewidth'] = 3
 mpl.rcParams['lines.markersize'] = 3
 mpl.rcParams['xtick.labelsize'] = 16
 mpl.rcParams['ytick.labelsize'] = 16
+mpl.rcParams['legend.fontsize'] = 18
 
 vec_norm = np.linalg.norm
 det = np.linalg.det
