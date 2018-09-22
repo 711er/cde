@@ -92,14 +92,3 @@ plt.tight_layout()
 plt.savefig('band-qs-square.pdf')
 # plt.show()
 
-
-# ### Triangular Lattice
-
-# ## Dynamical Response
-
-# In[ ]:
-
-
-# def eps_drude(kw, wp, gamma):
-#     w_pl = 11.34
-#     eps_a, eps_b, gamma = 5.45, 6.18, 0.05
